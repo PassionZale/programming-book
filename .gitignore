@@ -1,0 +1,4 @@
+# Claude Code 软链接（需要在本地手动创建）
+.claude/commands
+.claude/agents
+.claude/skills
