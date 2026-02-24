@@ -41,3 +41,12 @@ Features:
 - Conventional Commits format (type/scope/subject/body/footer)
 - Intelligent issue extraction from branch names (JIRA, simple numeric, custom formats)
 - Multi-language support (English and Chinese commit messages)
+
+## Skill Creation Guidelines
+
+When creating or updating skills, follow the [official best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices):
+
+- **Focus on agent capabilities and practical usage patterns** - Emphasize what agents can do and how to use them
+- **Ignore user-facing guides** - Skip introductions, getting-started guides, installation instructions, etc.
+- **Ignore LLM-known content** - Don't include information that LLMs are already confident about from their training data
+- **Keep it concise** - Avoid creating too many references and keep the skill as brief as possible
