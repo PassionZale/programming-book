@@ -42,9 +42,9 @@ Features:
 - Intelligent issue extraction from branch names (JIRA, simple numeric, custom formats)
 - Multi-language support (English and Chinese commit messages)
 
-## Skill Creation Guidelines
+## Skill Guidelines
 
-When creating or updating skills, follow the [official best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices):
+When creating or updating skills, follow the @./.claude/rules/skill-best-practices.md:
 
 - **Focus on agent capabilities and practical usage patterns** - Emphasize what agents can do and how to use them
 - **Ignore user-facing guides** - Skip introductions, getting-started guides, installation instructions, etc.
