@@ -10,7 +10,7 @@ description: 获取 TAPD 源码关键字，并生成 Markdown 文件。
 ## 核心原则
 
 - **参数必须原值传递** - $ARGUMENTS[n] 必须原样传递，禁止添加、删除或修改任何字符
-- **禁止自动优化** - 不要添加通配符、不要进行 URL 编码、不要尝试"改进"参数
+- **禁止自动优化** - 禁止擅自改进参数
 - **必须指定迭代** - 通过 $ARGUMENTS[0] 传入迭代名称，未提供时提示用户
 - **需求处理人** - 通过 $ARGUMENTS[1] 传入处理人, 为提供时提示用户
 - **需求名称** - 通过 $ARGUMENTS[2] 传入过滤条件, 可选
@@ -25,11 +25,8 @@ description: 获取 TAPD 源码关键字，并生成 Markdown 文件。
 
 - **$ARGUMENTS[0] 是否提供** - 未提供时提示用户：`请提供迭代名称(支持模糊搜索)，例如：/creating-tapd-scm-copy-keywords 0326 张三`
 - **$ARGUMENTS[1] 是否提供** - 未提供时提示用户：`请提供需求处理人(支持模糊搜索)，例如：/creating-tapd-scm-copy-keywords 0326 张三`
-- **TAPD MCP 工具是否可用** - 尝试列出可用工具确认
 
 ### 2. 获取迭代信息
-
-**严格按照以下参数调用，不得修改!**
 
 使用 `mcp__tapd__get_iterations` 获取迭代信息：
 
@@ -43,14 +40,7 @@ options: {
 }
 ```
 
-**重要限制：**
-- 不要添加 `%` 通配符
-- 不要修改参数值
-- 运行此精确调用
-
 ### 3. 获取任务列表
-
-**严格按照以下参数调用，不得修改!**
 
 使用 `mcp__tapd__get_stories_or_tasks` 获取该迭代当前用户的任务列表, 参数如下:
 
@@ -61,27 +51,21 @@ workspace_id: <同上>
 options: {
   "iteration_id": "<迭代ID>",
   "owner": "$ARGUMENTS[1]",
-  "name": "$ARGUMENTS[2] 存在则使用, 否则传入空字符串",
-  "entity_type": "task",
+  "name": "$ARGUMENTS[2] 存在则使用, 否则移除该字段",
+  "entity_type": "tasks",
   "fields": "id,name,story_id",
   "limit": 200
 }
 ```
 
-**重要限制：**
-- $ARGUMENTS[n] 必须原值传递
-- 不要添加模糊匹配字符
-
 ### 4. 获取每个任务的源码关键字
-
-**严格按照以下参数调用，不得修改!**
 
 对每个需求，使用 `mcp__tapd__get_commit_msg` 获取源码提交信息, 参数如下:
 
 ```
 workspace_id: <同上>
 options: {
-  "object_id": "<story_id>",
+  "object_id": "<任务ID>",
   "type": "story"
 }
 ```

@@ -16,4 +16,4 @@
 
 ---
 
-*生成时间: {YYYYMMDD HH:mm:ss}*
+*生成时间: {当前时间(格式化为 YYYY-MM-DD HH:mm:ss)}*
