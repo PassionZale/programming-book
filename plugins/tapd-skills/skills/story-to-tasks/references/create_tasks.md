@@ -22,7 +22,7 @@
 
 ### Step 2 - 创建任务
 
-若用户确认任务拆分结果无误，执行 ``${PY} scripts/create_tasks.py` 批量创建。
+若用户确认任务拆分结果无误，执行 `python3 ${CLAUDE_SKILL_DIR}/scripts/create_tasks.py` 批量创建。
 
 参数:
 
@@ -33,13 +33,11 @@
 示例:
 
 ```bash
-${PY} scripts/create_tasks.py --s <story_id> --f tasks/<story_id>.json
+python3 ${CLAUDE_SKILL_DIR}/scripts/create_tasks.py --s <story_id> --f tasks/<story_id>.json
 
-${PY} scripts/create_tasks.py --s <story_id> --f tasks/<story_id>.json --w <workspace_id>
+python3 ${CLAUDE_SKILL_DIR}/scripts/create_tasks.py --s <story_id> --f tasks/<story_id>.json --w <workspace_id>
 ```
 
 脚本会按顺序逐条调用 TAPD API，每条任务创建成功后打印结果。
 
 **在用户明确确认前不得自动执行此步骤。**
-
-**注意**: 执行前请确保已按 SKILL.md「运行时初始化」小节设置 `${PY}` 变量。

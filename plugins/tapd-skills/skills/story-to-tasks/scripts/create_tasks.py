@@ -6,9 +6,9 @@ TAPD 批量创建任务脚本
 支持模拟模式（dry-run）预览创建结果。
 
 Usage:
-    python scripts/create_tasks.py --s <story_id> --f tasks/<story_id>.json
-    python scripts/create_tasks.py --s <story_id> --f tasks/<story_id>.json --w <workspace_id>
-    python scripts/create_tasks.py --s <story_id> --f tasks/<story_id>.json --dry-run
+    python3 scripts/create_tasks.py --s <story_id> --f tasks/<story_id>.json
+    python3 scripts/create_tasks.py --s <story_id> --f tasks/<story_id>.json --w <workspace_id>
+    python3 scripts/create_tasks.py --s <story_id> --f tasks/<story_id>.json --dry-run
 """
 
 import argparse
