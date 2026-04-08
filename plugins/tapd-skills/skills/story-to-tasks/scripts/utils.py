@@ -1,6 +1,6 @@
+import os
 import sys
 import json
-from pathlib import Path
 from typing import Dict, Optional
 from urllib.parse import urljoin
 
@@ -18,28 +18,16 @@ from typings import EnvConfig
 
 def load_env() -> EnvConfig:
     """
-    从 skill 目录的 .env 文件加载环境配置
+    从环境变量加载配置项
 
     Returns:
-        包含 TAPD_WORKSPACE_ID、TAPD_ACCESS_TOKEN、GLM_API_KEY 的配置字典
+        包含 TAPD 工作区 ID、访问令牌、智谱 API Key 的配置字典
     """
-    skill_dir = Path(__file__).parent.parent
-    env_file = skill_dir / ".env"
-
-    if not env_file.exists():
-        print(f"Error: .env file not found at {env_file}")
-        print("Please copy .env.example to .env and configure your settings.")
-        sys.exit(1)
-
-    config = {}
-
-    with open(env_file) as lines:
-        for line in lines:
-            line = line.strip()
-            if line and not line.startswith("#") and "=" in line:
-                key, value = line.split("=", 1)
-                config[key.strip()] = value.strip()
-    return config
+    return {
+        "TAPD_WORKSPACE_ID": os.getenv("CLAUDE_PLUGIN_OPTION_TAPD_WORKSPACE_ID"),
+        "TAPD_ACCESS_TOKEN": os.getenv("CLAUDE_PLUGIN_OPTION_TAPD_ACCESS_TOKEN"),
+        "GLM_API_KEY": os.getenv("CLAUDE_PLUGIN_OPTION_ZAI_CODING_PLAN_KEY"),
+    }
 
 
 def make_request(
