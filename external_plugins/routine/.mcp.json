@@ -1,0 +1,13 @@
+{
+  "routine": {
+    "command": "npx",
+    "args": ["-y", "@code-sugar/mcp-server-routine-bot@latest"],
+    "env": {
+      "JENKINS_BASE_URL": "${user_config.JENKINS_BASE_URL}",
+      "JENKINS_USERNAME": "${user_config.JENKINS_USERNAME}",
+      "JENKINS_ACCESS_TOKEN": "${user_config.JENKINS_ACCESS_TOKEN}",
+      "GITLAB_BASE_URL": "${user_config.GITLAB_BASE_URL}",
+      "GITLAB_ACCESS_TOKEN": "${user_config.GITLAB_ACCESS_TOKEN}"
+    }
+  }
+}

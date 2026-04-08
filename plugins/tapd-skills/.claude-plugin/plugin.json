@@ -1,0 +1,22 @@
+{
+  "name": "tapd-skills",
+  "description": "Skills for TAPD shared by Lei Zhang for manage story, task, commit msg...",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lei Zhang"
+  },
+  "userConfig": {
+    "TAPD_WORKSPACE_ID": {
+      "description": "TAPD 默认的工作空间ID",
+      "sensitive": false
+    },
+    "TAPD_ACCESS_TOKEN": {
+      "description": "TAPD 访问令牌",
+      "sensitive": false
+    },
+    "ZAI_CODING_PLAN_KEY": {
+      "description": "智谱编码套餐令牌",
+      "sensitive": false
+    }
+  }
+}
