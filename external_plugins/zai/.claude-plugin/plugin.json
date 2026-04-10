@@ -7,19 +7,27 @@
   },
   "userConfig": {
     "Z_AI_MODE": {
+      "title": "Z.AI Mode",
       "description": "用于 AI 服务的平台（默认值： ZHIPU ）ZHIPU 或 ZAI",
+      "type": "string",
       "sensitive": false
     },
     "Z_AI_BASE_URL": {
+      "title": "Z.AI Base URL",
       "description": "BASE URL",
+      "type": "string",
       "sensitive": false
     },
     "Z_AI_API_KEY": {
+      "title": "Z.AI API Key",
       "description": "API KEY",
+      "type": "string",
       "sensitive": false
     },
     "Z_AI_VISION_MODEL": {
+      "title": "Z.AI Vision Model",
       "description": "视觉模型ID",
+      "type": "string",
       "sensitive": false
     }
   }

@@ -7,23 +7,33 @@
   },
   "userConfig": {
     "JENKINS_BASE_URL": {
+      "title": "Jenkins Base URL",
       "description": "Jenkins 服务器基础地址",
+      "type": "string",
       "sensitive": false
     },
     "JENKINS_USERNAME": {
+      "title": "Jenkins Username",
       "description": "Jenkins 用户名",
+      "type": "string",
       "sensitive": false
     },
     "JENKINS_ACCESS_TOKEN": {
+      "title": "Jenkins Access Token",
       "description": "Jenkins API 访问令牌",
+      "type": "string",
       "sensitive": false
     },
     "GITLAB_BASE_URL": {
+      "title": "GitLab Base URL",
       "description": "GitLab API 基础地址",
+      "type": "string",
       "sensitive": false
     },
     "GITLAB_ACCESS_TOKEN": {
+      "title": "GitLab Access Token",
       "description": "GitLab API 访问令牌",
+      "type": "string",
       "sensitive": false
     }
   }

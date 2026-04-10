@@ -7,15 +7,21 @@
   },
   "userConfig": {
     "TAPD_WORKSPACE_ID": {
+      "title": "TAPD Workspace ID",
       "description": "TAPD 默认的工作空间ID",
+      "type": "string",
       "sensitive": false
     },
     "TAPD_ACCESS_TOKEN": {
+      "title": "TAPD Access Token",
       "description": "TAPD 访问令牌",
+      "type": "string",
       "sensitive": false
     },
     "ZAI_CODING_PLAN_KEY": {
+      "title": "Z.AI Coding Plan Key",
       "description": "智谱编码套餐令牌",
+      "type": "string",
       "sensitive": false
     }
   }

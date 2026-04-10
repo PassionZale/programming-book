@@ -7,7 +7,9 @@
   },
   "userConfig": {
     "CONTEXT7_API_KEY": {
+      "title": "Context7 API Key",
       "description": "API KEY",
+      "type": "string",
       "sensitive": false
     }
   }

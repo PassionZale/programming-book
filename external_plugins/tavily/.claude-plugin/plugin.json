@@ -7,7 +7,9 @@
   },
   "userConfig": {
     "TAVILY_API_KEY": {
+      "title": "Tavily API Key",
       "description": "API KEY",
+      "type": "string",
       "sensitive": false
     }
   }
