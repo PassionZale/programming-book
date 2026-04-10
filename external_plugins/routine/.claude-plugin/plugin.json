@@ -1,0 +1,30 @@
+{
+  "name": "routine",
+  "description": "Lei Zhang Routine MCP server for manage GITLAB MR and JENKINS JOB.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lei Zhang"
+  },
+  "userConfig": {
+    "JENKINS_BASE_URL": {
+      "description": "Jenkins 服务器基础地址",
+      "sensitive": false
+    },
+    "JENKINS_USERNAME": {
+      "description": "Jenkins 用户名",
+      "sensitive": false
+    },
+    "JENKINS_ACCESS_TOKEN": {
+      "description": "Jenkins API 访问令牌",
+      "sensitive": false
+    },
+    "GITLAB_BASE_URL": {
+      "description": "GitLab API 基础地址",
+      "sensitive": false
+    },
+    "GITLAB_ACCESS_TOKEN": {
+      "description": "GitLab API 访问令牌",
+      "sensitive": false
+    }
+  }
+}
