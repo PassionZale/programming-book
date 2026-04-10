@@ -1,0 +1,26 @@
+{
+  "name": "zai",
+  "description": "视觉理解 MCP Server 是一个基于模型上下文协议 (Model Context Protocol) 的 Z.AI GLM-4.6V 能力实现，为 Claude Code, Cline 等兼容 MCP 的客户端提供智谱的强大能力，包括图像分析、视频理解等功能。",
+  "version": "0.1.0",
+  "author": {
+    "name": "Z.AI"
+  },
+  "userConfig": {
+    "Z_AI_MODE": {
+      "description": "用于 AI 服务的平台（默认值： ZHIPU ）ZHIPU 或 ZAI",
+      "sensitive": false
+    },
+    "Z_AI_BASE_URL": {
+      "description": "BASE URL",
+      "sensitive": false
+    },
+    "Z_AI_API_KEY": {
+      "description": "API KEY",
+      "sensitive": false
+    },
+    "Z_AI_VISION_MODEL": {
+      "description": "视觉模型ID",
+      "sensitive": false
+    }
+  }
+}

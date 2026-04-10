@@ -1,0 +1,12 @@
+{
+  "zai": {
+    "command": "npx",
+    "args": ["-y", "@z_ai/mcp-server@0.1.0"],
+    "env": {
+      "Z_AI_MODE": "${user_config.Z_AI_MODE}",
+      "Z_AI_BASE_URL": "${user_config.Z_AI_BASE_URL}",
+      "Z_AI_API_KEY": "${user_config.Z_AI_API_KEY}",
+      "Z_AI_VISION_MODEL": "${user_config.Z_AI_VISION_MODEL}"
+    }
+  }
+}
