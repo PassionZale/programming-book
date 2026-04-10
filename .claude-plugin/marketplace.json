@@ -15,10 +15,10 @@
       "homepage": "https://github.com/PassionZale/mcp-server-routine-bot"
     },
     {
-      "name": "tapd-skills",
+      "name": "tapd",
       "description": "Skills for TAPD shared by Lei Zhang for manage story and task",
       "category": "development",
-      "source": "./plugins/tapd-skills"
+      "source": "./plugins/tapd"
     }
   ]
 }
