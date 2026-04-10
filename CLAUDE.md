@@ -2,7 +2,7 @@
 
 ## 项目概述
 
-codesugar 是 Claude Code 插件市场仓库，由 Lei Zhang 维护，包含 TAPD 集成和 DevOps 自动化插件。
+programming-book 是 Claude Code 插件市场仓库，由 Lei Zhang 维护，包含 TAPD 集成和 DevOps 自动化插件。
 
 ## 技术栈
 

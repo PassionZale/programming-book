@@ -1,10 +1,10 @@
-# codesugar
+# programming-book
 
 > Claude Code 插件市场仓库 — 由 Lei Zhang 维护的效率提升工具集合
 
 ## 概述
 
-codesugar 是一个 Claude Code 插件市场（Marketplace），包含提高日常开发工作效率的技能和工具。通过 Claude Code 的插件系统安装后，可以使用 TAPD 集成和 DevOps 自动化功能。
+programming-book 是一个 Claude Code 插件市场（Marketplace），包含提高日常开发工作效率的技能和工具。通过 Claude Code 的插件系统安装后，可以使用 TAPD 集成和 DevOps 自动化功能。
 
 ## 插件列表
 
@@ -26,17 +26,17 @@ MCP 服务器，用于管理 GitLab Merge Request 和 Jenkins Job。
 ### 添加市场
 
 ```bash
-claude plugin marketplace add https://github.com/PassionZale/codesugar.git
+claude plugin marketplace add https://github.com/PassionZale/programming-book.git
 ```
 
 ### 安装插件
 
 ```bash
 # 安装 TAPD 插件
-claude plugin install tapd@codesugar
+claude plugin install tapd@programming-book
 
 # 安装 Routine 插件
-claude plugin install routine@codesugar
+claude plugin install routine@programming-book
 ```
 
 ## 配置
@@ -91,7 +91,7 @@ claude plugin install routine@codesugar
 ### 项目结构
 
 ```
-codesugar/
+programming-book/
 ├── .claude-plugin/
 │   └── marketplace.json          # 市场清单
 ├── plugins/
