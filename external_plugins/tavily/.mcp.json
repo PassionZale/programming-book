@@ -1,0 +1,9 @@
+{
+  "zai": {
+    "command": "npx",
+    "args": ["-y", "tavily-mcp@latest"],
+    "env": {
+      "TAVILY_API_KEY": "${user_config.TAVILY_API_KEY}"
+    }
+  }
+}

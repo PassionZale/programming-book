@@ -1,0 +1,14 @@
+{
+  "name": "tavily",
+  "description": "Production ready MCP server with real-time search, extract, map & crawl.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Tavily"
+  },
+  "userConfig": {
+    "TAVILY_API_KEY": {
+      "description": "API KEY",
+      "sensitive": false
+    }
+  }
+}
