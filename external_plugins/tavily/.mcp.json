@@ -1,5 +1,5 @@
 {
-  "zai": {
+  "tavily": {
     "command": "npx",
     "args": ["-y", "tavily-mcp@latest"],
     "env": {

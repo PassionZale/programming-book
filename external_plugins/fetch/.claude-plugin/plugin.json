@@ -1,0 +1,8 @@
+{
+  "name": "fetch",
+  "description": "Enables LLMs to retrieve and process content from web pages, converting HTML to markdown for easier consumption.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Anthropic"
+  }
+}

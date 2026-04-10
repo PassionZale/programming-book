@@ -1,0 +1,14 @@
+{
+  "name": "context7",
+  "description": "Up-to-date code documentation for LLMs and AI code editors",
+  "version": "1.0.0",
+  "author": {
+    "name": "Upstash"
+  },
+  "userConfig": {
+    "CONTEXT7_API_KEY": {
+      "description": "API KEY",
+      "sensitive": false
+    }
+  }
+}
