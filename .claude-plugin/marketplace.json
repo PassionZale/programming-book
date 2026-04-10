@@ -9,16 +9,45 @@
   },
   "plugins": [
     {
+      "name": "tapd",
+      "description": "Skills for TAPD shared by Lei Zhang for manage story and task",
+      "category": "development",
+      "source": "./plugins/tapd"
+    },
+    {
       "name": "routine",
+      "description": "Lei Zhang Routine MCP server for manage GITLAB MR and JENKINS JOB.",
       "category": "development",
       "source": "./external_plugins/routine",
       "homepage": "https://github.com/PassionZale/mcp-server-routine-bot"
     },
     {
-      "name": "tapd",
-      "description": "Skills for TAPD shared by Lei Zhang for manage story and task",
+      "name": "zai",
+      "description": "Provides specialized tools for different image and video analysis tasks",
       "category": "development",
-      "source": "./plugins/tapd"
+      "source": "./external_plugins/zai",
+      "homepage": "https://www.npmjs.com/package/@z_ai/mcp-server"
+    },
+    {
+      "name": "tavily",
+      "description": "Production ready MCP server with real-time search, extract, map & crawl.",
+      "category": "development",
+      "source": "./external_plugins/tavily",
+      "homepage": "https://github.com/tavily-ai/tavily-mcp"
+    },
+    {
+      "name": "context7",
+      "description": "Up-to-date code documentation for LLMs and AI code editors",
+      "category": "development",
+      "source": "./external_plugins/context7",
+      "homepage": "https://github.com/upstash/context7"
+    },
+    {
+      "name": "fetch",
+      "description": "Enables LLMs to retrieve and process content from web pages, converting HTML to markdown for easier consumption.",
+      "category": "development",
+      "source": "./external_plugins/fetch",
+      "homepage": "https://pypi.org/project/mcp-server-fetch"
     }
   ]
 }

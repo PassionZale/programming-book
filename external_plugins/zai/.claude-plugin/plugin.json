@@ -1,0 +1,26 @@
+{
+  "name": "zai",
+  "description": "Provides specialized tools for different image and video analysis tasks",
+  "version": "0.1.0",
+  "author": {
+    "name": "Z.AI"
+  },
+  "userConfig": {
+    "Z_AI_MODE": {
+      "description": "用于 AI 服务的平台（默认值： ZHIPU ）ZHIPU 或 ZAI",
+      "sensitive": false
+    },
+    "Z_AI_BASE_URL": {
+      "description": "BASE URL",
+      "sensitive": false
+    },
+    "Z_AI_API_KEY": {
+      "description": "API KEY",
+      "sensitive": false
+    },
+    "Z_AI_VISION_MODEL": {
+      "description": "视觉模型ID",
+      "sensitive": false
+    }
+  }
+}

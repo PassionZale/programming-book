@@ -33,7 +33,12 @@ plugins/tapd/                      # TAPD 插件（内部维护）
       │   └─ scripts/             # Python 脚本
       └─ story-to-tasks/          # 任务拆分技能
           └─ scripts/             # Python 脚本
-external_plugins/routine/          # 外部 MCP 服务器（submodule）
+external_plugins/                  # 外部 MCP 服务器
+  ├─ routine/                     # GitLab MR + Jenkins Job 管理
+  ├─ zai/                         # 智谱视觉理解（图像/视频分析）
+  ├─ tavily/                      # 实时搜索、爬取、网页提取
+  ├─ context7/                    # 最新代码文档查询
+  └─ fetch/                       # 网页内容获取（HTML→Markdown）
 docs/                              # 项目文档
 ```
 
@@ -77,9 +82,29 @@ description: 技能描述
 
 通过 Claude Code 的 `userConfig` 配置：
 
+### TAPD 插件
 - `TAPD_WORKSPACE_ID`: TAPD 工作空间 ID
 - `TAPD_ACCESS_TOKEN`: TAPD 访问令牌
-- `ZAI_CODING_PLAN_KEY`: 智谱编码套餐令牌
+- `ZAI_CODING_PLAN_KEY`: 智谱编码套餐令牌（可选）
+
+### Routine 插件
+- `JENKINS_BASE_URL`: Jenkins 服务器基础地址
+- `JENKINS_USERNAME`: Jenkins 用户名
+- `JENKINS_ACCESS_TOKEN`: Jenkins API 访问令牌
+- `GITLAB_BASE_URL`: GitLab API 基础地址
+- `GITLAB_ACCESS_TOKEN`: GitLab API 访问令牌
+
+### Zai 插件
+- `Z_AI_MODE`: 智谱模式
+- `Z_AI_BASE_URL`: 智谱 API 基础地址
+- `Z_AI_API_KEY`: 智谱 API 密钥
+- `Z_AI_VISION_MODEL`: 视觉模型名称
+
+### Tavily 插件
+- `TAVILY_API_KEY`: Tavily API 密钥
+
+### Context7 插件
+- `CONTEXT7_API_KEY`: Context7 API 密钥
 
 ## 技能说明
 
